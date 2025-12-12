@@ -9,7 +9,7 @@ cask "claude-code-plans" do
 
   depends_on arch: :arm64
 
-  app "Claude Code Plans.app"
+  app "Claude Code Plans.app", quarantine: false
 
   zap trash: [
     "~/Library/Application Support/claude-code-plans",
