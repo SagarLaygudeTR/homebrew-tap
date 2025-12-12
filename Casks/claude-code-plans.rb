@@ -11,6 +11,12 @@ cask "claude-code-plans" do
 
   app "Claude Code Plans.app", quarantine: false
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/Claude Code Plans.app"],
+                   sudo: false
+  end
+
   zap trash: [
     "~/Library/Application Support/claude-code-plans",
     "~/Library/Preferences/com.claude.code-plans.plist",
