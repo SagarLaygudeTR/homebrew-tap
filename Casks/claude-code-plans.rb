@@ -9,7 +9,7 @@ cask "claude-code-plans" do
 
   depends_on arch: :arm64
 
-  app "Claude Code Plans.app", quarantine: false
+  app "Claude Code Plans.app"
 
   postflight do
     system_command "/usr/bin/xattr",
