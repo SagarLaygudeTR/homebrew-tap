@@ -1,6 +1,6 @@
 cask "claude-code-plans" do
   version "1.0.0"
-  sha256 "c55a612ad5b484393d2986c75c7c2a1006153149917f478433364ce7c24a033e"
+  sha256 "84ef8f627101c07d9bfbc407ae79258090fe78cd9d06418933d8029385cacbc4"
 
   url "https://github.com/SagarLaygudeTR/claude-code-plans/releases/download/v#{version}/Claude.Code.Plans-#{version}-arm64-mac.zip"
   name "Claude Code Plans"
